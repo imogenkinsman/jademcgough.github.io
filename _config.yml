@@ -5,7 +5,7 @@ pygments:         true
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
-google_analytics:
+google_analytics: UA-49268083-1
 timezone:         America/Los_Angeles
 paginate: 5
 gems:
