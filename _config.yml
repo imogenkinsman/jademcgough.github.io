@@ -1,3 +1,13 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
+title:            Jade McGough - @sailoremo
+url:              http://zetsubo.github.io
+permalink:        pretty
+pygments:         true
+markdown:         rdiscount
+rdiscount:
+  extensions:     [smart]
+google_analytics:
+timezone:         America/Los_Angeles
+paginate: 5
+gems:
+  - jemoji
+  - jekyll-mentions
