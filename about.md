@@ -4,6 +4,6 @@ title: about
 ---
 
 **Jade McGough** <br />
-An update New Yorker who moved to San Francisco to do more coding.
+An upstate New Yorker who moved to San Francisco to do more coding.
 
 I :heart: Ruby.
