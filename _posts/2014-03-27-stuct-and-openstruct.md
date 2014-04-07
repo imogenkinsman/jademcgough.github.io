@@ -22,14 +22,14 @@ class Cat
   end
 end
 
-kuruneko = Cat.new("black", 16")
+kuruneko = Cat.new("black", 16)
 {% endhighlight %}
 
 And here's the same class written using Struct:
 {% highlight ruby %}
 Cat = Struct.new(:color, :age)
 
-kuruneko = Cat.new("black", 16")
+kuruneko = Cat.new("black", 16)
 {% endhighlight %}
 
 As you can guess, attribute readers/writers are implicitly created by Struct definitions. You'll occasionally see structs written like so:
