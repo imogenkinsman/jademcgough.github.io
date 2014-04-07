@@ -68,7 +68,7 @@ require 'ostruct'
 cat = OpenStruct.new(name: "Mittens")
 {% endhighlight %}
 
-So, when would you actually use an OpenStruct? OpenStruct plays really well with Ruby's emphasis on [duck-typing](http://en.wikipedia.org/wiki/Duck_typing). You can think of it as a quick way to make a dummy object that will response however you want it to.
+So, when would you actually use an OpenStruct? OpenStruct plays really well with Ruby's emphasis on [duck-typing](http://en.wikipedia.org/wiki/Duck_typing). You can think of it as a way to make a dummy object that will respond however you want it to.
 
 In [Avdi Grimm's talk on Confident Coding](https://www.youtube.com/watch?v=T8J0j2xJFgQ), he recommends using it as a way of creating default responses for an object that could be nil.
 
