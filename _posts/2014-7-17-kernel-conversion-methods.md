@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kernel Conversion Methods
-date: 2014-05-27 19:03:00
+date: 2014-07-17 23:43:12
 ---
 
 There have been a number of great posts (such as [this one](http://devblog.avdi.org/2012/05/07/a-ruby-conversion-idiom/) from Avdi Grimm) about the handy conversion methods in Ruby's Kernel module. I couldn't find an in-depth discussion about these, and my standard ruby documentation sources didn't fully explain their quirks, so hopefully this helps someone who's curious in the future.
