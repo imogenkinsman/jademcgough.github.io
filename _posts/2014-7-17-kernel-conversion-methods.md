@@ -16,3 +16,18 @@ Calls arg.to_s. This is guaranteed to work in practical terms, since Object#to_s
 
 ## Kernel#Hash
 Calls arg.to_hash. Unlike Kernel#String, this isn't defined on Object and Kernel#Hash will raise a TypeError if #to_hash is not defined on the provided object.
+
+## A Note on Return Values
+By using Kernel methods, you are guaranteed to either get back the requested object type or raise a TypeError. If you try to cheat and define a to_* method that returns the wrong type, your evil plans will be foiled. Ruby checks the return type and will raise a TypeError if it doesn't match.
+
+{% highlight ruby %}
+class A
+  def to_a
+    "An Array"
+  end
+end
+
+> a = A.new
+> Array(a)
+TypeError: can't convert A to Array (A#to_a gives String)
+{% endhighlight %}
