@@ -38,6 +38,8 @@ class Cat < Struct.new(:color, :age)
 end
 {% endhighlight %}
 
+If you see that, find the person who wrote it and shout "BAD! BAD PROGRAMMER!" at them until you feel satisfied. Struct.new returns a new class that interits from Struct, so this adds an unnecessary layer of inheritance. Also, if this gets run twice for whatever reason, you'll get a ```superclass mismatch error```. This happens because you just tried to have Cat inherit from two different classes, since Struct.new creates a unique class object when it executes.
+
 You can even define methods in a struct, though at this point it's probably better just to use a more traditional class declaration.
 {% highlight ruby %}
 Cat = Struct.new(:color, :age) do
