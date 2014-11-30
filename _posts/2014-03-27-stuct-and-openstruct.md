@@ -82,5 +82,3 @@ end
 
 sayName # => "My name is Jade"
 {% endhighlight %}
-
-And that's Struct and OpenStruct!
