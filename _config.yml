@@ -1,7 +1,7 @@
 title:            Jade McGough - @sailoremo
 url:              http://jademcgough.github.io
 permalink:        pretty
-pygments:         true
+highlighter:      true
 markdown:         rdiscount
 rdiscount:
   extensions:     [smart]
@@ -11,3 +11,5 @@ paginate: 5
 gems:
   - jemoji
   - jekyll-mentions
+  - jekyll-paginate
+  - rdiscount
