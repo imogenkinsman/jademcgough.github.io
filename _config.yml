@@ -1,10 +1,7 @@
 title:            Jade McGough - @sailoremo
 url:              http://jademcgough.github.io
 permalink:        pretty
-highlighter:      true
-markdown:         rdiscount
-rdiscount:
-  extensions:     [smart]
+highlighter:      rouge
 google_analytics: UA-49268083-1
 timezone:         America/Los_Angeles
 paginate: 5
