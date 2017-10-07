@@ -1,3 +1,9 @@
+---
+layout: post
+title: LeetCode: Two Sum
+date: 2017-10-7 14:15:00
+---
+
 Problem: [Two Sum](https://discuss.leetcode.com/category/9/two-sum)
 
 I tackled this in a few ways. There's the standard O(n^2) solution, which takes a blazing 5.5 seconds to complete:
