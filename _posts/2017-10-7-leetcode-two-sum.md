@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode: Two Sum
+title: LeetCode - Two Sum
 date: 2017-10-7 14:15:00
 ---
 
