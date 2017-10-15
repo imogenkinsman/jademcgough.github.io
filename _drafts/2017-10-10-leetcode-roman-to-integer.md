@@ -6,7 +6,7 @@ date: 2017-10-10 09:58:00
 
 Problem: [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)
 
-My first attempt is O(n), which I doubt I could beat in terms of complexity.
+My first attempt is O(n) (runs in 182ms), which I doubt I could beat in terms of complexity.
 
 ```ruby
 def roman_to_int(s)
@@ -61,3 +61,35 @@ end
 ```
 
 I hate how verbose that is, though. I can break this into smaller problems with recursion, which allows me to not have to track the individual counts.
+
+```ruby
+def roman_to_int(s)
+    chars = s.split('').reverse
+    get_total(char_value(chars.first), chars.drop(1))
+end
+
+def get_total(sum, chars)
+    return sum if chars.length == 0
+
+    val = char_value(chars.first)
+    if val <= (sum / 5)
+       get_total(sum - val, chars.drop(1))
+    else
+       get_total(sum + val, chars.drop(1))
+    end
+end
+
+def char_value(char)
+    case char
+    when 'M' then 1000
+    when 'D' then 500
+    when 'C' then 100
+    when 'L' then 50
+    when 'X' then 10
+    when 'V' then 5
+    when 'I' then 1
+    end
+end
+```
+
+This is also O(n), and ran in the same amount of time. It's a bit cleaner, but perhaps more clever as well.
