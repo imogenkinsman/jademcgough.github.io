@@ -94,7 +94,7 @@ end
 
 This is also O(n), and ran in the same amount of time. It's a bit cleaner, but perhaps more clever as well.
 
-Something I didn't pick up on initially (guess I haven't used roman numerals in a while) is that there's only ever going to be one "decrementer" character (i.e. 9 is IX but 8 is VIII). That lets us do a single pass and just check the next character.
+Something I didn't pick up on initially (guess I haven't used roman numerals in a while) is that there's only ever going to be one "decrementer" character (i.e. 9 is IX but 8 is VIII). That lets us do a single pass (other than the split/map) and just check the next character.
 
 ```ruby
 def roman_to_int(s)
